@@ -6,6 +6,7 @@ header {
 }
 .header__container {
   position: fixed;
+  top: 0;
   max-width: 330px;
   margin: 0 auto;
   padding-top: 37px;
