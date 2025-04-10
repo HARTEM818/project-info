@@ -52,7 +52,7 @@ header {
   margin-top: 93px;
   padding-bottom: 98px;
   .header__item {
-    color: var(--second-text-color);
+    color: var(--header-item-color);
     text-align: center;
     font-family: Poppins;
     font-size: 30px;
@@ -64,7 +64,7 @@ header {
   max-width: 337px;
   margin: 0 auto;
   .hero__title {
-    color: var(--st);
+    color: var(--hero-title);
     font-family: Volkhov;
     font-size: 48px;
     font-weight: 700;
