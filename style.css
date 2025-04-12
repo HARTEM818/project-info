@@ -59,7 +59,7 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  margin-top: 93px;
+  padding-top: 93px;
   padding-bottom: 98px;
   .header__item {
     color: var(--header-item-color);
@@ -71,7 +71,7 @@ header {
 }
 
 .hero {
-  margin-top: 150px;
+  padding-top: 150px;
 }
 .hero__container {
   padding: 0 17px 0 60px;
@@ -116,7 +116,7 @@ header {
     display: flex;
     align-items: center;
     gap: 21px;
-    margin-top: 40px;
+    padding-top: 40px;
   }
   .hero__interaction-btn {
     border: none;
@@ -141,7 +141,7 @@ header {
   }
 }
 .category {
-  margin-top: 110px;
+  padding-top: 110px;
 }
 .category__container {
   max-width: 287px;
@@ -160,13 +160,13 @@ header {
   font-family: Volkhov;
   font-size: 40px;
   font-weight: 700;
-  margin-top: 24px;
+  padding-top: 24px;
 }
 .category__list {
   display: flex;
   flex-direction: column;
   gap: 37px;
-  margin-top: 47px;
+  padding-top: 47px;
 }
 .card {
   display: flex;
@@ -193,7 +193,7 @@ header {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.625;
-    margin-top: 15px;
+    padding-top: 15px;
   }
 }
 .card__shadow {
