@@ -265,6 +265,10 @@ footer {
     font-size: 18px;
   }
 }
+
+.footer__item-link + a:hover{
+  text-decoration: solid;
+}
 .footer__wrapper-discover > p {
   color: var(--category-subtitle, #5e6282);
   font-family: Poppins;
