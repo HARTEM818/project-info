@@ -25,7 +25,8 @@ header {
 .card:nth-of-type(3),
 .card:nth-of-type(4),
 .hero__subtitle,
-.hero__text {
+.hero__text,
+.advanteges__subtitle {
   display: none;
 }
 
@@ -215,15 +216,132 @@ header {
   height: 100.967px;
   z-index: -1;
 }
+.advantages {
+  padding-top: 83px;
+}
+.advantages__container {
+  max-width: 388px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.advantages__wrapper-info {
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+}
+.advanteges__title {
+  position: relative;
+  color: var(--category-title, #14183e);
+  text-align: center;
+  font-family: Volkhov;
+  font-size: 40px;
+  font-weight: 700;
+  .break-word {
+    display: block;
+  }
+}
+.advanteges__title::before{
+  
+  content: url("./img/advanteges-pluses.svg");
+  position: absolute;
+  top: -175px;
+  left: -6px;
+}
+.advanteges__list {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.advanteges__item {
+  display: flex;
+  gap: 21px;
+  .advanteges_wrapper-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    h3 {
+      color: var(--TEXT-CLR, #5e6282);
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 700;
+    }
+    p {
+      color: var(--TEXT-CLR, #5e6282);
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}
+
+.advantages__wrapper-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 325px;
+  padding: 18px 20px 28px 21px;
+  border-radius: 26px;
+  background: var(--white, #fff);
+  box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.02),
+    0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02),
+    0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01),
+    0px 20px 13px 0px rgba(0, 0, 0, 0.01),
+    0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01),
+    0px 1.852px 3.148px 0px rgba(0, 0, 0, 0);
+}
+.advantages__wrapper-women-beach {
+  border-radius: 24px;
+  border: 1px solid #000;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.advantages__card-title {
+  color: var(--black, #080809);
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+}
+.advantages__card-wrapper-info:nth-of-type(1) p {
+  color: var(--text-2, #84829a);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  span{
+    padding: 0 0 0px   15px;
+  }
+}
+.advantages__card-wrapper-info:nth-of-type(2) {
+  display: flex;
+  gap: 10px;
+}
+.advantages__card-wrapper-info:nth-of-type(3) {
+  display: flex;
+  gap: 73px;
+  div {
+    width: 100%;
+    display: flex;
+    gap: 11px;
+    p {
+      color: var(--text-2, #84829a);
+      font-family: Poppins;
+      font-size: 16px;;
+      font-weight: 500;;
+    }
+  }
+}
 
 footer {
+  margin-top: 60px;
+  padding-top: 13px;
   background-color: var(--header-bg);
 }
 .footer__container {
   max-width: 287px;
   margin: 0 auto;
 }
-.footer__wrapper-title{
+.footer__wrapper-title {
   display: flex;
   flex-direction: column;
   gap: 19px;
@@ -238,16 +356,16 @@ footer {
   font-family: Poppins;
   font-size: 13px;
 }
-.footer__list{
+.footer__list {
   display: flex;
   flex-direction: column;
   gap: 34px;
   padding-top: 58px;
 }
-.footer__list-item{
+.footer__list-item {
   display: flex;
   flex-direction: column;
-    gap: 34px;
+  gap: 34px;
 }
 .footer__list-item > h3 {
   color: var(--black, #080809);
@@ -266,32 +384,36 @@ footer {
   }
 }
 
-.footer__item-link + a:hover{
-  text-decoration: solid;
+.footer__item-link a:hover {
+  text-decoration: underline;
 }
 .footer__wrapper-discover > p {
   color: var(--category-subtitle, #5e6282);
   font-family: Poppins;
   font-size: 20px;
 }
-.footer__wrapper-social + p{
-  color: var(--TEXT-CLR, #5E6282);
-font-family: Poppins;
-font-size: 14px;
-font-weight: 500;
-padding-top: 69px;
+.footer__wrapper-social + p {
+  color: var(--TEXT-CLR, #5e6282);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  padding-top: 69px;
 }
-.footer__wrapper-social{
+.footer__wrapper-social {
   display: flex;
   flex-direction: column;
   gap: 41px;
   padding-top: 58px;
 }
-.footer-wrapper-social-link{
+.footer-wrapper-social-link {
   display: flex;
   gap: 20px;
 }
-.footer__wrapper-discover{
+.scale-social-link:hover {
+  transform: scale(2);
+  transition: transform 0.5s;
+}
+.footer__wrapper-discover {
   display: flex;
   flex-direction: column;
   gap: 16px;
