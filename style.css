@@ -242,8 +242,7 @@ header {
     display: block;
   }
 }
-.advanteges__title::before{
-  
+.advanteges__title::before {
   content: url("./img/advanteges-pluses.svg");
   position: absolute;
   top: -175px;
@@ -279,9 +278,11 @@ header {
 .advantages__wrapper-card {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  max-width: 325px;
-  padding: 18px 20px 28px 21px;
+  justify-content: center;
+  gap: 23px;
+  max-width: 253px;
+  padding: 18px 20px 28px 20px;
+  margin-left: 41px;
   border-radius: 26px;
   background: var(--white, #fff);
   box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.02),
@@ -290,6 +291,15 @@ header {
     0px 20px 13px 0px rgba(0, 0, 0, 0.01),
     0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01),
     0px 1.852px 3.148px 0px rgba(0, 0, 0, 0);
+}
+.advantages__wrapper-card > div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.advantages__picture {
+  display: flex;
+  justify-content: center;
 }
 .advantages__wrapper-women-beach {
   border-radius: 24px;
@@ -305,11 +315,11 @@ header {
 .advantages__card-wrapper-info:nth-of-type(1) p {
   color: var(--text-2, #84829a);
   font-family: Poppins;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  span{
-    padding: 0 0 0px   15px;
+  span {
+    padding: 0 0 0px 15px;
   }
 }
 .advantages__card-wrapper-info:nth-of-type(2) {
@@ -326,8 +336,8 @@ header {
     p {
       color: var(--text-2, #84829a);
       font-family: Poppins;
-      font-size: 16px;;
-      font-weight: 500;;
+      font-size: 16px;
+      font-weight: 500;
     }
   }
 }
