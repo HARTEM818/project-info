@@ -224,7 +224,7 @@ header {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 97px;
 }
 .advantages__wrapper-info {
   display: flex;
@@ -282,7 +282,7 @@ header {
   gap: 23px;
   max-width: 253px;
   padding: 18px 20px 28px 20px;
-  margin-left: 41px;
+  margin-left: 34px;
   border-radius: 26px;
   background: var(--white, #fff);
   box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.02),
@@ -341,6 +341,9 @@ header {
     }
   }
 }
+
+
+
 
 footer {
   margin-top: 60px;
