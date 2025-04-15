@@ -26,7 +26,7 @@ header {
 .card:nth-of-type(4),
 .hero__subtitle,
 .hero__text,
-.advanteges__subtitle {
+.info__subtitle {
   display: none;
 }
 
@@ -216,66 +216,75 @@ header {
   height: 100.967px;
   z-index: -1;
 }
-.advantages {
+
+
+
+
+
+
+
+
+
+
+.info {
   padding-top: 83px;
 }
-.advantages__container {
+.info__container {
   max-width: 388px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 97px;
 }
-.advantages__wrapper-info {
+.info__wrapper-info {
   display: flex;
   flex-direction: column;
   gap: 65px;
 }
-.advanteges__title {
+.info__title {
   position: relative;
   color: var(--category-title, #14183e);
   text-align: center;
   font-family: Volkhov;
   font-size: 40px;
   font-weight: 700;
-  .break-word {
-    display: block;
-  }
 }
-.advanteges__title::before {
+.info__title .break-word {
+  display: block;
+}
+.info__title::before {
   content: url("./img/advanteges-pluses.svg");
   position: absolute;
   top: -175px;
   left: -6px;
 }
-.advanteges__list {
+.info__list {
   display: flex;
   flex-direction: column;
   gap: 48px;
 }
-.advanteges__item {
+.info__item {
   display: flex;
   gap: 21px;
-  .advanteges_wrapper-text {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    h3 {
-      color: var(--TEXT-CLR, #5e6282);
-      font-family: Poppins;
-      font-size: 16px;
-      font-weight: 700;
-    }
-    p {
-      color: var(--TEXT-CLR, #5e6282);
-      font-family: Poppins;
-      font-size: 16px;
-      font-weight: 400;
-    }
-  }
 }
-
-.advantages__wrapper-card {
+.info_wrapper-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.info_wrapper-text h3 {
+  color: var(--TEXT-CLR, #5e6282);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+}
+.info_wrapper-text p {
+  color: var(--TEXT-CLR, #5e6282);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+}
+.info__wrapper-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -292,54 +301,54 @@ header {
     0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01),
     0px 1.852px 3.148px 0px rgba(0, 0, 0, 0);
 }
-.advantages__wrapper-card > div {
+.info__wrapper-card > div {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-.advantages__picture {
+.info__picture {
   display: flex;
   justify-content: center;
 }
-.advantages__wrapper-women-beach {
+.info__wrapper-women-beach {
   border-radius: 24px;
   border: 1px solid #000;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.advantages__card-title {
+.info__card-title {
   color: var(--black, #080809);
   font-family: Poppins;
   font-size: 18px;
   font-weight: 500;
 }
-.advantages__card-wrapper-info:nth-of-type(1) p {
+.info__card-wrapper-info:nth-of-type(1) p {
   color: var(--text-2, #84829a);
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  span {
-    padding: 0 0 0px 15px;
-  }
 }
-.advantages__card-wrapper-info:nth-of-type(2) {
+.info__card-wrapper-info:nth-of-type(1) p span {
+  padding: 0 0 0px 15px;
+}
+.info__card-wrapper-info:nth-of-type(2) {
   display: flex;
   gap: 10px;
 }
-.advantages__card-wrapper-info:nth-of-type(3) {
+.info__card-wrapper-info:nth-of-type(3) {
   display: flex;
   gap: 73px;
-  div {
-    width: 100%;
-    display: flex;
-    gap: 11px;
-    p {
-      color: var(--text-2, #84829a);
-      font-family: Poppins;
-      font-size: 16px;
-      font-weight: 500;
-    }
-  }
+}
+.info__card-wrapper-info:nth-of-type(3) div {
+  width: 100%;
+  display: flex;
+  gap: 11px;
+}
+.info__card-wrapper-info:nth-of-type(3) div p {
+  color: var(--text-2, #84829a);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 
