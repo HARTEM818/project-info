@@ -221,26 +221,28 @@ header {
 
 
 
-
-.adventages{
+.advantages {
   background-color: var(--white);
   padding-bottom: 72px;
 }
+
 .advantages__container {
   padding: 0 45px 0 52px;
 }
-.advanteges__wrapper-title h3 {
+
+.advantages__wrapper-title h3 {
   color: var(--category-subtitle, #5e6282);
   text-align: center;
   font-family: Poppins;
   font-size: 20px;
   font-weight: 600;
-  span {
-    display: block;
-    padding-bottom: 8px;
-  }
 }
-.advanteges__wrapper-title h1 {
+.advantages__wrapper-title h3 span {
+  display: block;
+  padding-bottom: 8px;
+}
+
+.advantages__wrapper-title h1 {
   color: var(--hero-title, #131738);
   text-align: center;
   font-family: Volkhov;
@@ -248,13 +250,15 @@ header {
   font-weight: 700;
   line-height: normal;
 }
-.advanteges__list{
+
+.advantages__list {
   margin-top: 39px;
   display: flex;
   flex-direction: column;
   gap: 75px;
 }
-.advanteges__item {
+
+.advantages__item {
   position: relative;
   border-radius: 24px;
   box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.02),
@@ -264,44 +268,51 @@ header {
     0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01),
     0px 1.852px 3.148px 0px rgba(0, 0, 0, 0);
 }
-.adventages__img {
+
+.advantages__img {
   width: 100%;
   border-radius: 24px;
 }
-.advanteges__card-wrapper-title {
+
+.advantages__card-wrapper-title {
   display: flex;
   justify-content: space-between;
-  padding: 27px 23px 0 19px
+  padding: 27px 23px 0 19px;
 }
-.advanteges__card-wrapper-route{
+
+.advantages__card-wrapper-route {
   padding: 0 23px 44px 19px;
   display: flex;
 }
-.advantages__card-wrapper-info{
+
+.advantages__card-wrapper-info {
   background-color: var(--white);
   position: absolute;
   bottom: 0;
   right: 0;
   left: 0;
-
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
 }
-.advanteges__card-wrapper-title p {
+
+.advantages__card-wrapper-title p {
   color: var(--category-subtitle, #5e6282);
   font-family: Poppins;
   font-size: 18px;
   font-weight: 500;
 }
-.advanteges__card-wrapper-title p span{
+
+.advantages__card-wrapper-title p span {
   display: block;
 }
-.advanteges__card-wrapper-route p {
+
+.advantages__card-wrapper-route p {
   color: var(--category-subtitle, #5e6282);
   font-family: Poppins;
   font-size: 16px;
   font-weight: 500;
 }
+
 .info {
   padding-top: 120px;
   margin-top: 11px;
@@ -431,6 +442,7 @@ header {
 .subscribe{
   display: none;
 }
+
 footer {
   margin-top: 60px;
   padding-top: 13px;
