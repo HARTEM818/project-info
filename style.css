@@ -224,6 +224,7 @@ header {
 .advantages {
   background-color: var(--white);
   padding-bottom: 72px;
+  padding-top: 169px;
 }
 
 .advantages__container {
@@ -283,6 +284,7 @@ header {
 .advantages__card-wrapper-route {
   padding: 0 23px 44px 19px;
   display: flex;
+  gap: 11px;
 }
 
 .advantages__card-wrapper-info {
@@ -439,6 +441,15 @@ header {
   font-size: 16px;
   font-weight: 500;
 }
+.testimonials__container{
+  max-width: 359px;
+  margin: 0 auto;
+}
+
+
+
+
+
 .subscribe{
   display: none;
 }
