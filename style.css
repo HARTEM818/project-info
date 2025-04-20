@@ -457,6 +457,16 @@ header {
   display: none;
 }
 
+
+
+
+
+
+
+.social-link-svg{
+  width: 24px;
+  height: 24px;
+}
 footer {
   margin-top: 60px;
   padding-top: 13px;
