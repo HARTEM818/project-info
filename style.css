@@ -219,7 +219,10 @@ header {
 
 
 
-
+.svg-blach-telegram{
+  height: 0;
+  width: 0;
+}
 
 .advantages {
   background-color: var(--white);
