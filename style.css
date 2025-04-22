@@ -76,6 +76,9 @@ header {
 }
 .hero__container {
   padding: 0 17px 0 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .hero__title {
   color: var(--hero-title);
@@ -84,6 +87,7 @@ header {
   font-weight: 700;
   line-height: 1.85416666667;
   position: relative;
+  max-width: 337px;
 }
 .hero__title::before {
   content: url("./img/hero-plane.svg");
@@ -230,6 +234,9 @@ header {
 
 .advantages__container {
   padding: 0 45px 0 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .advantages__wrapper-title p {
@@ -391,6 +398,13 @@ header {
     0px 20px 13px 0px rgba(0, 0, 0, 0.01),
     0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01),
     0px 1.852px 3.148px 0px rgba(0, 0, 0, 0);
+    position: relative;
+}
+.info__wrapper-card::after{
+  content: url("./img/info-pluses.svg");
+  position: absolute;
+  right: -75px;
+  bottom: -75px;
 }
 .info__wrapper-card > div {
   display: flex;
@@ -441,12 +455,14 @@ header {
   font-size: 16px;
   font-weight: 500;
 }
-
+.testimonials{
+  padding-top: 157px;
+}
 .testimonials__container {
   max-width: 359px;
   margin: 0 auto;
 }
-.testimonials__wrapper-title{
+.testimonials__wrapper-title {
   display: flex;
   flex-direction: column;
   gap: 27px;
@@ -465,11 +481,58 @@ header {
   font-size: 40px;
   font-weight: 700;
   line-height: normal;
-  span{
+  span {
     display: block;
   }
 }
-
+.testimonials__card {
+  border-radius: 10px;
+  background: var(--white, #fff);
+  box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.02),
+    0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02),
+    0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01),
+    0px 20px 13px 0px rgba(0, 0, 0, 0.01),
+    0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01),
+    0px 1.852px 3.148px 0px rgba(0, 0, 0, 0);
+    padding: 21px 3px 16px 9px;
+    position: relative;
+  margin-top: 128px;
+}
+.tasty-man {
+  border-radius: 100%;
+  position: absolute;
+  top: -45px;
+  left: 145px;
+}
+.testimonials__card-text {
+  color: var(--category-subtitle, #5e6282);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2;
+}
+.testimonials__card-wrapper-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-top: 40px;
+  h3 {
+    color: var(--category-subtitle, #5e6282);
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+  }
+  p {
+    color: var(--category-subtitle, #5e6282);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
 .subscribe {
   display: none;
 }
