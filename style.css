@@ -155,7 +155,7 @@ header {
   font-size: 20px;
   font-weight: 600;
 }
-.category__wrapper-title > h1 {
+.category__wrapper-title > p {
   color: var(--category-title);
   text-align: center;
   font-family: Volkhov;
@@ -217,9 +217,7 @@ header {
   z-index: -1;
 }
 
-
-
-.navigation-advantages-svg{
+.navigation-advantages-svg {
   width: 16px;
   height: 16px;
 }
@@ -234,19 +232,19 @@ header {
   padding: 0 45px 0 52px;
 }
 
-.advantages__wrapper-title h3 {
+.advantages__wrapper-title p {
   color: var(--category-subtitle, #5e6282);
   text-align: center;
   font-family: Poppins;
   font-size: 20px;
   font-weight: 600;
 }
-.advantages__wrapper-title h3 span {
+.advantages__wrapper-title p span {
   display: block;
   padding-bottom: 8px;
 }
 
-.advantages__wrapper-title h1 {
+.advantages__wrapper-title h2 {
   color: var(--hero-title, #131738);
   text-align: center;
   font-family: Volkhov;
@@ -443,29 +441,39 @@ header {
   font-size: 16px;
   font-weight: 500;
 }
-.testimonials__container{
+
+.testimonials__container {
   max-width: 359px;
   margin: 0 auto;
 }
+.testimonials__wrapper-title{
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+.testimonials__subtitle {
+  color: var(--category-subtitle, #5e6282);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+}
+.testimonials__title {
+  color: var(--3rd, #14183e);
+  text-align: center;
+  font-family: Volkhov;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;
+  span{
+    display: block;
+  }
+}
 
-
-
-
-
-.subscribe{
+.subscribe {
   display: none;
 }
 
-
-
-
-
-
-
-.social-link-svg{
-  width: 24px;
-  height: 24px;
-}
 footer {
   margin-top: 73px;
   padding-top: 13px;
@@ -551,4 +559,8 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+.social-link-svg {
+  width: 24px;
+  height: 24px;
 }
