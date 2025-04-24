@@ -76,6 +76,8 @@ header {
 }
 .hero__container {
   padding: 0 17px 0 60px;
+}
+.hero__wrapper-title {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -398,9 +400,9 @@ header {
     0px 20px 13px 0px rgba(0, 0, 0, 0.01),
     0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01),
     0px 1.852px 3.148px 0px rgba(0, 0, 0, 0);
-    position: relative;
+  position: relative;
 }
-.info__wrapper-card::after{
+.info__wrapper-card::after {
   content: url("./img/info-pluses.svg");
   position: absolute;
   right: -75px;
@@ -455,7 +457,7 @@ header {
   font-size: 16px;
   font-weight: 500;
 }
-.testimonials{
+.testimonials {
   padding-top: 157px;
 }
 .testimonials__container {
@@ -494,8 +496,8 @@ header {
     0px 20px 13px 0px rgba(0, 0, 0, 0.01),
     0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01),
     0px 1.852px 3.148px 0px rgba(0, 0, 0, 0);
-    padding: 21px 3px 16px 9px;
-    position: relative;
+  padding: 21px 3px 16px 9px;
+  position: relative;
   margin-top: 128px;
 }
 .tasty-man {
@@ -532,6 +534,69 @@ header {
     font-weight: 500;
     line-height: normal;
   }
+}
+.partners{
+  background-color: var(--white);
+}
+.partners__container {
+  padding: 74px 78px 0 89px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    color: var(--category-subtitle, #5e6282);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+  }
+}
+.partners__svg{
+  background: lightgray / 50%; 
+  display: block;
+  mix-blend-mode: luminosity;
+  border-radius: 8px;
+}
+.partners__svg:nth-of-type(1) {
+  width: 130px;
+  height: 120px;
+}
+.partners__svg:nth-of-type(2) {
+  width: 172px;
+  height: 101px;
+}
+.partners__svg:nth-of-type(3) {
+  width: 162px;
+  height: 149px;
+}
+.partners__svg:nth-of-type(4) {
+  width: 162px;
+  height: 30px;
+}
+
+.partners__subscribe {
+  border-radius: 10px;
+  background: var(
+    --gradient,
+    linear-gradient(180deg, #ff946d 0%, #ff7d68 100%)
+  );
+  color: var(--white, #fff);
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 17px;
+  font-weight: 600;
+  line-height: normal;
+  padding: 15px 33px 18px 42px;
+  margin-top: 98px;
+  border: none;
+  position: relative;
+}
+.partners__subscribe::after {
+  content: url("./img/telegram-purple.svg");
+  position: absolute;
+  top: 0;
+  right: -90px;
 }
 .subscribe {
   display: none;
