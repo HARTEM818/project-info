@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Travel And Route</title>
     <link rel="stylesheet" href="./reset-style.css" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./zmini.css" />
@@ -12,7 +12,7 @@
     <header>
       <div class="header__container">
         <div class="header__logo-wrapper">
-          <img src="./img/header-logo.svg" alt="" />
+          <img class="header__logo-icon" src="./img/header-logo.svg" alt="" />
           <nav class="header__nav">
             <ul class="header__list">
               <li class="header__item">
@@ -50,11 +50,11 @@
         <div class="hero__container">
           <div class="hero__wrapper-title">
             <h2 class="hero__subtitle">Best Destinations around the world</h2>
-          <h1 class="hero__title">
-            Travel, enjoy and live a new and full life
-          </h1>
+            <h1 class="hero__title">
+              Travel, enjoy and live a new and full life
+            </h1>
           </div>
-          
+
           <p class="hero__text">
             Built Wicket longer admire do barton vanity itself do in it.
             Preferred to sportsmen it engrossed listening. Park gate sell they
@@ -68,7 +68,19 @@
             </div>
           </div>
         </div>
-        <img src="" alt="" />
+        <picture>
+          <source
+            media="(min-width: 1440px)"
+            srcset="./img/women-traveler/women-traveler.webp"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1440px)"
+            srcset="./img/women-traveler/women-traveler.avif"
+            type="image/avif"
+          />
+          <img class="women-traveler" src="./img/women-traveler/women-traveler.png" alt="" />
+        </picture>
       </section>
 
       <section class="category" id="category">
@@ -79,22 +91,21 @@
           </div>
           <ul class="category__list">
             <li class="card">
-              <div class="category__square"></div>
-              <!-- !!!!!! -->
-              <img src="./img/anten.svg" alt="" /> 
+              <div class="category__square disable"></div>
+              <img src="./img/anten.svg" alt="" />
               <h3>Calculated Weather</h3>
               <p>
                 Built Wicket longer admire do barton vanity itself do in it.
               </p>
             </li>
             <li class="card">
-              <div class="category__square"></div>
+              <div class="category__square disable"></div>
               <img src="./img/plane.svg" alt="" />
               <h3>Best Flights</h3>
               <p>Engrossed listening. Park gate sell they west hard for the.</p>
             </li>
             <li class="card">
-              <div class="category__square"></div>
+              <div class="category__square disable"></div>
 
               <img src="./img/micro-phone.svg" alt="" />
               <h3>Local Events</h3>
@@ -104,7 +115,7 @@
               </p>
             </li>
             <li class="card">
-              <div class="category__square"></div>
+              <div class="category__square disable"></div>
 
               <img src="./img/adjasment.svg" alt="" />
               <h3>Customization</h3>
@@ -355,7 +366,9 @@
         <div class="testimonials__container">
           <div class="testimonials__wrapper-title">
             <p class="testimonials__subtitle">Testimonials</p>
-            <h2 class="testimonials__title">What people <span>say about us</span></h2>
+            <h2 class="testimonials__title">
+              What people <span>say about us</span>
+            </h2>
           </div>
           <div class="testimonials__card">
             <picture>
@@ -402,16 +415,16 @@
       <section class="partners" id="partners">
         <div class="partners__container">
           <h2>Top Selling</h2>
-          <svg class="partners__svg" >
+          <svg class="partners__svg">
             <use href="./img/axon.svg#axon-symbol"></use>
           </svg>
-          <svg class="partners__svg" >
+          <svg class="partners__svg">
             <use href="./img/jetstar.svg#jetstar-symbol"></use>
           </svg>
-          <svg class="partners__svg" >
+          <svg class="partners__svg">
             <use href="./img/expedia.svg#expedia-symbol"></use>
           </svg>
-          <svg class="partners__svg" >
+          <svg class="partners__svg">
             <use href="./img/qantas.svg#qantas-symbol"></use>
           </svg>
           <button class="partners__subscribe">Subscribe</button>

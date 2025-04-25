@@ -5,12 +5,8 @@ burgerMenu.addEventListener("click", () => {
 })
 // const categoryList = document.querySelector(".category__list");
 // const categorySquare = document.querySelectorAll(".category__square");
-// categoryList.addEventListener("click", (event) => {
-//     console.log(event);
-//     if(event.currentTarget === "li.card"){
-//         console.log("kwmew");
-        
-//     }
+// categoryList.addEventListener("click", () => {
+//     
 // })
 
 
