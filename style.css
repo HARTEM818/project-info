@@ -866,6 +866,13 @@ footer {
 
   .category__container {
     max-width: 1228px;
+    position: relative;
+  }
+  .category__container::after{
+    content: url("./img/category-pluses.svg");
+    position: absolute;
+    top: 0;
+    right: -80px;
   }
   .category__list {
     padding-top: 68px;
@@ -899,6 +906,10 @@ footer {
   .category__card-title-fourth {
     margin-top: 30px;
   }
+
+
+
+
   .advantages__container{
     padding: 0 227px 0 174px;
   }
