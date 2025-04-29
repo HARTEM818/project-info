@@ -788,7 +788,6 @@ footer {
   .hero__container {
     display: flex;
     align-items: center;
-    justify-content: center;
     padding: 0 97px 0 150px;
   }
   .hero__wrapper {
@@ -940,6 +939,7 @@ footer {
   }
   .info__wrapper-info{
     gap: 0;
+    max-width: 511px;
   }
   .info__subtitle {
     color: var(--TEXT-CLR, #5e6282);
