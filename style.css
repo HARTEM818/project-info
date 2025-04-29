@@ -937,9 +937,8 @@ footer {
     align-items: center;
     gap: 118px;
   }
-  .info__wrapper-info{
+  .info__wrapper-info {
     gap: 0;
-    max-width: 511px;
   }
   .info__subtitle {
     color: var(--TEXT-CLR, #5e6282);
@@ -952,23 +951,67 @@ footer {
     margin-top: 15px;
     font-size: 50px;
     text-align: start;
-    padding-right: 190px;
-    .break-word{
+    padding-right: 100px;
+    .break-word {
       display: inline;
     }
   }
-  .info__title::before{
+  .info__title::before {
     display: none;
   }
-  .info__list{
+  .info__list {
     max-width: 395px;
     margin-top: 31px;
   }
-  .info__wrapper-card{
+  .info__wrapper-card {
     padding: 20px 24px 31px 25px;
     margin: 0;
+    max-width: none;
   }
-  .info__wrapper-card::after{
+  .info__wrapper-card::after {
     display: none;
+  }
+  .testimonials__container {
+    padding: 0 217px 0 186px;
+    max-width: 1037px;
+    margin: 0;
+    display: flex;
+    gap: 87px;
+  }
+  .testimonials__card-wrapper-title {
+    display: block;
+  }
+  .testimonials__card {
+    margin-top: 0;
+    padding: 28px 68px 34px 34px;
+    max-width: 504px;
+  }
+  .tasty-man {
+    left: -40px;
+    top: -30px;
+  }
+  .testimonials__subtitle {
+    text-align: start;
+  }
+  .testimonials__title {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: start;
+    span {
+      display: inline;
+    }
+  }
+  .testimonials__card-wrapper-title {
+    margin-top: 34px;
+ 
+    p {
+      font-weight: 500;
+    }
+    
+  }
+  .testimonials__card-text {
+    font-weight: 400;
+    line-height: 2;
+    padding-right: 85px;
   }
 }
