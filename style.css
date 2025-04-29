@@ -754,6 +754,9 @@ footer {
     background-color: transparent;
     font-family: "Open sans";
   }
+  .header__btn-login:hover{
+    color: var(--category-subtitle);
+  }
   .header__btn-sign-up {
     color: var(--1st, #212832);
     font-size: 17px;
@@ -765,6 +768,10 @@ footer {
     border: 1px solid var(--1st, #212832);
     border-radius: 5px;
     font-family: "Open sans";
+  }
+  .header__btn-sign-up:hover{
+    background-color: var(--black);
+    color: var(--white);
   }
   .header__item > a {
     color: var(--1st, #212832);
@@ -851,6 +858,10 @@ footer {
   }
   .hero__interaction-btn::after {
     display: none;
+  }
+  .hero__interaction-btn:hover{
+    background-color: var(--redfull);
+    
   }
   .hero__wrapper-interaction {
     flex-direction: row;
@@ -974,7 +985,6 @@ footer {
   .testimonials__container {
     padding: 0 217px 0 186px;
     max-width: 1037px;
-    margin: 0;
     display: flex;
     gap: 87px;
   }
@@ -1019,20 +1029,35 @@ footer {
     }
   }
 
+
+
+
+
   .subscribe {
     display: block;
+    margin-top: 145px;
   }
   .subscribe__container {
     margin: 0 auto;
     max-width: 1170px;
-    border-radius: 20px 129px 20px 20px;
-     background-color: rgba(223, 215, 249, 0.2);;
+    border-radius: 129px 20px 20px 20px;
+     position: relative;
     padding: 79px 155px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 74px;
+    background-image: url("./img/kolo1.svg"), url("./img/kolo2.svg");
+    background-color: rgba(223, 215, 249, 0.2);
+    background-position: 30px 130px, 1000px 0;
+    background-repeat: no-repeat, no-repeat;
+  }
+  .subscribe__container::after{
+    content: url("./img/subscribe-telegram.svg");
+    position: absolute;
+    top: -20px;
+    right: -25px;
   }
   .subscribe__text {
     color: var(--TEXT-CLR, #5e6282);
@@ -1051,6 +1076,12 @@ footer {
     );
     color: var(--white);
   }
+  .subscribe__btn:hover{
+    color: var(--1st);
+  }
+
+
+
   footer {
     background-color: white;
   }
@@ -1059,12 +1090,11 @@ footer {
     margin: 0 auto;
     padding: 40px 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 40px;
   }
-
   .footer__wrapper-title {
     flex: 1 1 250px;
     gap: 20px;
