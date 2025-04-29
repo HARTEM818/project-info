@@ -983,8 +983,11 @@ footer {
   }
   .testimonials__card {
     margin-top: 0;
-    padding: 28px 68px 34px 34px;
+    padding: 28px 0px 34px 34px;
     max-width: 504px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
   }
   .tasty-man {
     left: -40px;
@@ -1003,15 +1006,112 @@ footer {
   }
   .testimonials__card-wrapper-title {
     margin-top: 34px;
- 
+
     p {
       font-weight: 500;
     }
-    
   }
   .testimonials__card-text {
+    padding-right: 68px;
     font-weight: 400;
-    line-height: 2;
-    padding-right: 85px;
+    span {
+      display: block;
+    }
+  }
+
+  .subscribe {
+    display: block;
+  }
+  .subscribe__container {
+    margin: 0 auto;
+    max-width: 1170px;
+    border-radius: 20px 129px 20px 20px;
+     background-color: rgba(223, 215, 249, 0.2);;
+    padding: 79px 155px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 74px;
+  }
+  .subscribe__text {
+    color: var(--TEXT-CLR, #5e6282);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 1.63636363636;
+  }
+  .subscribe__btn {
+    padding: 22px 50px;
+    border-radius: 10px;
+    background: var(
+      --gradient,
+      linear-gradient(180deg, #ff946d 0%, #ff7d68 100%)
+    );
+    color: var(--white);
+  }
+  footer {
+    background-color: white;
+  }
+  .footer__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .footer__wrapper-title {
+    flex: 1 1 250px;
+    gap: 20px;
+  }
+
+  .footer__wrapper-title h2 {
+    font-size: 44px;
+    margin-bottom: 19px;
+  }
+
+  .footer__wrapper-title p {
+    font-size: 13px;
+    max-width: 207px;
+  }
+
+  .footer__list {
+    display: flex;
+    flex: 2 1 500px;
+    flex-direction: row;
+    gap: 60px;
+    padding-top: 0;
+  }
+
+  .footer__list-item {
+    gap: 18px;
+  }
+
+  .footer__item-link a {
+    font-size: 16px;
+  }
+
+  .footer__wrapper-social {
+    padding-top: 0;
+    gap: 24px;
+  }
+
+  .footer__wrapper-discover p {
+    font-size: 18px;
+  }
+
+  .footer__wrapper-apps {
+    display: flex;
+    gap: 12px;
+  }
+
+  .footer__wrapper-social + p {
+    text-align: right;
+    padding-top: 40px;
   }
 }
