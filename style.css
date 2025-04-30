@@ -559,9 +559,7 @@ header {
 }
 .partners__svg {
   background: lightgray / 50%;
-  display: block;
   mix-blend-mode: luminosity;
-  border-radius: 8px;
 }
 .partners__svg:nth-of-type(1) {
   width: 130px;
@@ -579,7 +577,9 @@ header {
   width: 162px;
   height: 30px;
 }
-
+.partners__svg:nth-of-type(5) {
+  display: none;
+}
 .partners__subscribe {
   border-radius: 10px;
   background: var(
@@ -754,7 +754,7 @@ footer {
     background-color: transparent;
     font-family: "Open sans";
   }
-  .header__btn-login:hover{
+  .header__btn-login:hover {
     color: var(--category-subtitle);
   }
   .header__btn-sign-up {
@@ -769,7 +769,7 @@ footer {
     border-radius: 5px;
     font-family: "Open sans";
   }
-  .header__btn-sign-up:hover{
+  .header__btn-sign-up:hover {
     background-color: var(--black);
     color: var(--white);
   }
@@ -859,9 +859,8 @@ footer {
   .hero__interaction-btn::after {
     display: none;
   }
-  .hero__interaction-btn:hover{
+  .hero__interaction-btn:hover {
     background-color: var(--redfull);
-    
   }
   .hero__wrapper-interaction {
     flex-direction: row;
@@ -1028,10 +1027,22 @@ footer {
       display: block;
     }
   }
-
-
-
-
+  .partners__container{
+    padding-top: 173px;
+    flex-direction: row;
+    justify-content: space-between;
+    h2{
+      display: none;
+    }
+  }
+  .partners__svg:nth-of-type(5) {
+    display: block;
+    width: 94px;
+    height: 21px;
+  }
+  .partners__subscribe{
+    display: none;
+  }
 
   .subscribe {
     display: block;
@@ -1041,7 +1052,7 @@ footer {
     margin: 0 auto;
     max-width: 1170px;
     border-radius: 129px 20px 20px 20px;
-     position: relative;
+    position: relative;
     padding: 79px 155px;
     box-sizing: border-box;
     display: flex;
@@ -1053,7 +1064,7 @@ footer {
     background-position: 30px 130px, 1000px 0;
     background-repeat: no-repeat, no-repeat;
   }
-  .subscribe__container::after{
+  .subscribe__container::after {
     content: url("./img/subscribe-telegram.svg");
     position: absolute;
     top: -20px;
@@ -1076,11 +1087,9 @@ footer {
     );
     color: var(--white);
   }
-  .subscribe__btn:hover{
+  .subscribe__btn:hover {
     color: var(--1st);
   }
-
-
 
   footer {
     background-color: white;
