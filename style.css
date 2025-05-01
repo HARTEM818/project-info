@@ -76,7 +76,8 @@ header {
   margin-top: 150px;
 }
 .hero__container {
-  padding: 0 17px 0 60px;
+  /* padding: 0 17px 0 60px; */
+  margin: 0 auto;
 }
 .hero__wrapper-title {
   display: flex;
@@ -228,10 +229,6 @@ header {
   display: none;
 }
 
-.navigation-advantages-svg {
-  width: 16px;
-  height: 16px;
-}
 
 .advantages {
   background-color: var(--white);
@@ -283,6 +280,10 @@ header {
     0px 20px 13px 0px rgba(0, 0, 0, 0.01),
     0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01),
     0px 1.852px 3.148px 0px rgba(0, 0, 0, 0);
+}
+.navigation-advantages-svg {
+  width: 16px;
+  height: 16px;
 }
 
 .advantages__img {
@@ -755,6 +756,7 @@ footer {
     font-family: "Open sans";
   }
   .header__btn-login:hover {
+    cursor: pointer;
     color: var(--category-subtitle);
   }
   .header__btn-sign-up {
@@ -770,6 +772,7 @@ footer {
     font-family: "Open sans";
   }
   .header__btn-sign-up:hover {
+    cursor: pointer;
     background-color: var(--black);
     color: var(--white);
   }
@@ -795,7 +798,9 @@ footer {
   .hero__container {
     display: flex;
     align-items: center;
-    padding: 0 97px 0 150px;
+    /* padding: 0 97px 0 150px; */
+    margin: 0 auto;
+    max-width: 1150px;
   }
   .hero__wrapper {
     padding-left: 10px;
@@ -861,6 +866,7 @@ footer {
   }
   .hero__interaction-btn:hover {
     background-color: var(--redfull);
+    cursor: pointer;
   }
   .hero__wrapper-interaction {
     flex-direction: row;
@@ -868,6 +874,9 @@ footer {
     margin-top: 34px;
     div {
       padding: 0;
+      a:hover{
+        cursor: pointer;
+      }
     }
   }
 
@@ -981,6 +990,11 @@ footer {
   .info__wrapper-card::after {
     display: none;
   }
+  .heart:hover{
+    cursor: pointer;
+
+  }
+
   .testimonials__container {
     padding: 0 217px 0 186px;
     max-width: 1037px;
@@ -1035,6 +1049,9 @@ footer {
       display: none;
     }
   }
+  .partners__svg:hover{
+    cursor: pointer;
+  }
   .partners__svg:nth-of-type(5) {
     display: block;
     width: 94px;
@@ -1088,7 +1105,7 @@ footer {
     color: var(--white);
   }
   .subscribe__btn:hover {
-    color: var(--1st);
+    cursor: pointer;
   }
 
   footer {
