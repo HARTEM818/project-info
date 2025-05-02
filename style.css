@@ -76,7 +76,6 @@ header {
   margin-top: 150px;
 }
 .hero__container {
-  /* padding: 0 17px 0 60px; */
   margin: 0 auto;
 }
 .hero__wrapper-title {
@@ -799,7 +798,6 @@ footer {
   .hero__container {
     display: flex;
     align-items: center;
-    /* padding: 0 97px 0 150px; */
     margin: 0 auto;
     max-width: 1150px;
   }
