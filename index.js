@@ -6,30 +6,22 @@ burgerMenu.addEventListener("click", () => {
   body.classList.toggle("no-scroll");
 });
 
-if (window.matchMedia("(min-width: 1440px)").matches) {
-  const a = document.querySelector(".hero__interaction-btn + div > a");
-  const modalOverlay = document.getElementById("modalOverlay");
-  const modalWindow = document.getElementById("modalWindow");
-  const body = document.body;
-  const headerContainer = document.querySelector("header");
+const a = document.querySelector(".hero__interaction-btn + div > a");
+const modalOverlay = document.querySelector(".modal-overlay");
+const modalWindow = document.querySelector(".modal-window");
 
-  a.addEventListener("click", (e) => {
-    e.preventDefault();
-    modalOverlay.style.display = "flex";
-    body.classList.toggle("no-scroll");
-    headerContainer.style.display = "none";
-  });
+a.addEventListener("click", (e) => {
+  e.preventDefault();
+  modalOverlay.style.display = "flex";
+  body.classList.toggle("no-scroll");
+  headerContainer.style.display = "none";
+});
 
-  modalOverlay.addEventListener("click", () => {
-    modalOverlay.style.display = "none";
-    body.classList.toggle("no-scroll");
-    headerContainer.style.display = "block";
-  });
-
-  modalWindow.addEventListener("click", (e) => {
-    e.stopPropagation();
-  });
-}
+modalOverlay.addEventListener("click", () => {
+  modalOverlay.style.display = "none";
+  body.classList.toggle("no-scroll");
+  headerContainer.style.display = "block";
+});
 
 const cards = document.querySelectorAll(".card");
 

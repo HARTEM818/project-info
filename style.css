@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 .no-scroll {
   overflow: hidden;
-} 
+}
 
 header {
   position: fixed;
@@ -81,7 +81,7 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5); 
+  background: rgba(0, 0, 0, 0.5);
   display: none;
   justify-content: center;
   align-items: center;
@@ -92,7 +92,6 @@ header {
   padding: 20px;
   border-radius: 10px;
 }
-
 
 .hero {
   margin-top: 150px;
@@ -249,7 +248,6 @@ header {
 .disable {
   display: none;
 }
-
 
 .advantages {
   background-color: var(--white);
@@ -804,7 +802,7 @@ footer {
     line-height: normal;
     font-family: "Open sans";
   }
-  
+
   .hero {
     margin-top: 110px;
   }
@@ -829,24 +827,25 @@ footer {
   }
   .women-traveler-picture {
     position: relative;
+    transform: translateX(-150px);
   }
   .women-traveler-picture::before {
     position: absolute;
     top: 50px;
-    left: 30px;
+    left: 130px;
     content: url("./img/pseudo-plane.svg");
   }
   .women-traveler-picture::after {
     position: absolute;
     top: 102px;
-    left: 518px;
+    left: 620px;
     z-index: -1;
     content: url("./img/pseudo-plane.svg");
   }
   .women-traveler {
     display: inline;
-    position: relative;
-    right: 100px;
+    /* position: relative;
+    right: 100px; */
   }
   .hero__wrapper-title {
     align-items: flex-start;
@@ -896,7 +895,7 @@ footer {
     margin-top: 34px;
     div {
       padding: 0;
-      a:hover{
+      a:hover {
         cursor: pointer;
       }
     }
@@ -1012,9 +1011,8 @@ footer {
   .info__wrapper-card::after {
     display: none;
   }
-  .heart:hover{
+  .heart:hover {
     cursor: pointer;
-
   }
 
   .testimonials__container {
@@ -1063,20 +1061,20 @@ footer {
       display: block;
     }
   }
-  .partners__container{
+  .partners__container {
     max-width: 1073px;
     padding-top: 173px;
     flex-direction: row;
     justify-content: space-between;
     overflow: hidden;
-    h2{
+    h2 {
       display: none;
     }
   }
-  .partners__svg{
+  .partners__svg {
     animation: runline 15s linear infinite;
   }
-  .partners__svg:hover{
+  .partners__svg:hover {
     cursor: pointer;
   }
   .partners__svg:nth-of-type(5) {
@@ -1084,14 +1082,14 @@ footer {
     width: 94px;
     height: 21px;
   }
-  .partners__subscribe{
+  .partners__subscribe {
     display: none;
   }
   @keyframes runline {
-    0%{
+    0% {
       transform: translateX(-1200px);
     }
-    100%{
+    100% {
       transform: translateX(1100px);
     }
   }

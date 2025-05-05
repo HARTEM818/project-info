@@ -48,10 +48,20 @@
     <main>
       <section class="hero" id="hero">
         <div class="hero__decore-bg"></div>
-        <div class="modal-overlay" id="modalOverlay">
-          <div class="modal-window" id="modalWindow">
+        <div class="modal-overlay">
+          <div class="modal-window">
             <a href="https://cosmolot.ua/ua">
-              <img src="./img/cosmolot.webp" alt="">
+              <picture>
+                <source
+                media="(min-width: 1440px)"
+                srcset="././img/cosmolot.webp"
+                >
+                <source
+                media="(min-width: 414px)"
+                srcset="./img/cosmolot-mobile.avif"
+                >
+                <img src="" alt="">
+              </picture>
             </a>
           </div>
         </div>
