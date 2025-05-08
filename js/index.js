@@ -4,13 +4,3 @@ import { cardsEfect } from "./cardsEfect.js";
 burgerMenuFn()
 heroModal()
 cardsEfect()
-
-
-
-
-
-
-
-
-
-
