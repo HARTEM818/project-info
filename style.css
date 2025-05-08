@@ -488,6 +488,7 @@ header {
 .testimonials__container {
   max-width: 359px;
   margin: 0 auto;
+  padding-bottom: 74px;
 }
 .testimonials__wrapper-title {
   display: flex;
@@ -635,6 +636,7 @@ footer {
 .footer__container {
   max-width: 287px;
   margin: 0 auto;
+  
 }
 .footer__wrapper-title {
   display: flex;
