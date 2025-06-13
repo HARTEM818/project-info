@@ -5,7 +5,7 @@ export function heroModal() {
   const body = document.body;
   const headerContainer = document.querySelector(".header__container");
 
-  
+
   a.addEventListener("click", (e) => {
     e.preventDefault();
     modalOverlay.style.display = "flex";
